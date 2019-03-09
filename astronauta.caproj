@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>astronauta</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2g2gih5fm772u</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1000</width>
+        <height>750</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Fundo" sid="254556315104507">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="799364768229289" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\bg_castle.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Solida" sid="430234256920311">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="368875345277560">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\tiles_spritesheet.png" />
+            <tiles>
+                <tile id="2">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="0.567857" />
+                        <point x="0" y="0.571428" />
+                    </collision-poly>
+                </tile>
+                <tile id="14">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="0.575" />
+                        <point x="0" y="0.575" />
+                    </collision-poly>
+                </tile>
+                <tile id="26">
+                    <collision-poly>
+                        <point x="3.25963e-009" y="0.00714286" />
+                        <point x="1" y="0.00357143" />
+                        <point x="1" y="0.567857" />
+                        <point x="0" y="0.571428" />
+                    </collision-poly>
+                </tile>
+                <tile id="38">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="0.335714" />
+                        <point x="0.6" y="0.626786" />
+                        <point x="0.321429" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="62">
+                    <collision-poly>
+                        <point x="0.375" y="0.589286" />
+                        <point x="0.00178567" y="0.333929" />
+                        <point x="0" y="2.32831e-009" />
+                        <point x="0.289286" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
+                        <point x="0.657143" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="145">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="0.567857" />
+                        <point x="0" y="0.571428" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="Player" sid="847159974950671">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="movendo" sid="202601183304623" type="boolean" />
+                <instance-variable name="moedasTotais" sid="985288793234979" type="number" />
+                <instance-variable name="moedasColetadas" sid="748431828707850" type="number" />
+                <instance-variable name="PoderPulo" sid="728630045979873" type="boolean" />
+                <instance-variable name="WalkNormal" sid="119355650701322" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="162261369153551">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Still" pingpong="0" repeatcount="1" repeatto="0" sid="524335083695539" speed="5">
+                    <frame duration="1" hotspotX="0.469697" hotspotY="1" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_stand.png">
+                        <collision-poly>
+                            <point x="0" y="0.179348" />
+                            <point x="0.356061" y="0" />
+                            <point x="0.689394" y="0" />
+                            <point x="1" y="0.255434" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="11" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="394851776726021" speed="5">
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.979381" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk10.png">
+                        <collision-poly>
+                            <point x="0.00694444" y="0.301546" />
+                            <point x="0.348958" y="0.0347938" />
+                            <point x="0.652778" y="0.0335052" />
+                            <point x="1" y="0.261598" />
+                            <point x="1" y="0.987113" />
+                            <point x="0" y="0.984536" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.979381" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk05.png">
+                        <collision-poly>
+                            <point x="0.00694444" y="0.301546" />
+                            <point x="0.348958" y="0.0347938" />
+                            <point x="0.652778" y="0.0335052" />
+                            <point x="1" y="0.261598" />
+                            <point x="1" y="0.987113" />
+                            <point x="0" y="0.984536" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.979381" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk01.png">
+                        <collision-poly>
+                            <point x="0.00694444" y="0.301546" />
+                            <point x="0.348958" y="0.0347938" />
+                            <point x="0.652778" y="0.0335052" />
+                            <point x="1" y="0.261598" />
+                            <point x="1" y="0.987113" />
+                            <point x="0" y="0.984536" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.979381" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk02.png">
+                        <collision-poly>
+                            <point x="0.00694444" y="0.301546" />
+                            <point x="0.348958" y="0.0347938" />
+                            <point x="0.652778" y="0.0335052" />
+                            <point x="1" y="0.261598" />
+                            <point x="1" y="0.987113" />
+                            <point x="0" y="0.984536" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.979381" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk03.png">
+                        <collision-poly>
+                            <point x="0.00694444" y="0.301546" />
+                            <point x="0.348958" y="0.0347938" />
+                            <point x="0.652778" y="0.0335052" />
+                            <point x="1" y="0.261598" />
+                            <point x="1" y="0.987113" />
+                            <point x="0" y="0.984536" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.979381" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk04.png">
+                        <collision-poly>
+                            <point x="0.00694444" y="0.301546" />
+                            <point x="0.348958" y="0.0347938" />
+                            <point x="0.652778" y="0.0335052" />
+                            <point x="1" y="0.261598" />
+                            <point x="1" y="0.987113" />
+                            <point x="0" y="0.984536" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.979381" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk06.png">
+                        <collision-poly>
+                            <point x="0.00694444" y="0.301546" />
+                            <point x="0.348958" y="0.0347938" />
+                            <point x="0.652778" y="0.0335052" />
+                            <point x="1" y="0.261598" />
+                            <point x="1" y="0.987113" />
+                            <point x="0" y="0.984536" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.979381" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk07.png">
+                        <collision-poly>
+                            <point x="0.00694444" y="0.301546" />
+                            <point x="0.348958" y="0.0347938" />
+                            <point x="0.652778" y="0.0335052" />
+                            <point x="1" y="0.261598" />
+                            <point x="1" y="0.987113" />
+                            <point x="0" y="0.984536" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.979381" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk08.png">
+                        <collision-poly>
+                            <point x="0.00694444" y="0.301546" />
+                            <point x="0.348958" y="0.0347938" />
+                            <point x="0.652778" y="0.0335052" />
+                            <point x="1" y="0.261598" />
+                            <point x="1" y="0.987113" />
+                            <point x="0" y="0.984536" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.979381" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk09.png">
+                        <collision-poly>
+                            <point x="0.00694444" y="0.301546" />
+                            <point x="0.348958" y="0.0347938" />
+                            <point x="0.652778" y="0.0335052" />
+                            <point x="1" y="0.261598" />
+                            <point x="1" y="0.987113" />
+                            <point x="0" y="0.984536" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.979381" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk11.png">
+                        <collision-poly>
+                            <point x="0.00694444" y="0.301546" />
+                            <point x="0.348958" y="0.0347938" />
+                            <point x="0.652778" y="0.0335052" />
+                            <point x="1" y="0.261598" />
+                            <point x="1" y="0.987113" />
+                            <point x="0" y="0.984536" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="894467552607118" speed="5">
+                    <frame duration="1" hotspotX="0.477612" hotspotY="0.989362" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_jump.png">
+                        <collision-poly>
+                            <point x="0" y="0.202128" />
+                            <point x="0.330224" y="0" />
+                            <point x="0.660447" y="0" />
+                            <point x="1" y="0.200798" />
+                            <point x="1" y="0.986702" />
+                            <point x="0" y="0.986702" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="11" loop="0" name="DoubleWalk" pingpong="0" repeatcount="1" repeatto="0" sid="947482520783154" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk05.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk04.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk06.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk07.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk09.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_walk11.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="DoubleJump" pingpong="0" repeatcount="1" repeatto="0" sid="578493340569276" speed="5">
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.5" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites jogador\p3_jump.png">
+                        <collision-poly>
+                            <point x="0.149254" y="0.106383" />
+                            <point x="0.492537" y="0" />
+                            <point x="0.850746" y="0.106383" />
+                            <point x="0.925373" y="0.5" />
+                            <point x="0.865672" y="0.904255" />
+                            <point x="0.492537" y="0.882979" />
+                            <point x="0.223881" y="0.840426" />
+                            <point x="0.0447761" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="415713130097899">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Moeda" sid="149860518253280">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="147323612918723">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595183994093879" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\coinGold.png">
+                        <collision-poly>
+                            <point x="0.396429" y="0.394643" />
+                            <point x="0.498214" y="0.353571" />
+                            <point x="0.628571" y="0.407143" />
+                            <point x="0.648215" y="0.514286" />
+                            <point x="0.6125" y="0.639286" />
+                            <point x="0.507143" y="0.671429" />
+                            <point x="0.401786" y="0.630357" />
+                            <point x="0.344643" y="0.505357" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MoedaPulo" sid="707222107873225">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="464717704957967" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\coinGold.png">
+                        <collision-poly>
+                            <point x="0.328571" y="0.328571" />
+                            <point x="0.5" y="0.271429" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.757143" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AudioMoedas" sid="596596617341714">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="MoedaGravidade" sid="212900724725411">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527735804552058" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\coinGold.png">
+                        <collision-poly>
+                            <point x="0.328571" y="0.328571" />
+                            <point x="0.5" y="0.271429" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.757143" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MoedaInimiga" sid="743668115716865">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="808677115451345" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\coinGold.png">
+                        <collision-poly>
+                            <point x="0.328571" y="0.328571" />
+                            <point x="0.5" y="0.271429" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.757143" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Ponte" sid="913210405952109">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="173761959180644">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="559185465004987">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116766982361109" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.828571" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\bridgeLogs.png">
+                        <collision-poly>
+                            <point x="0.00178571" y="0.642858" />
+                            <point x="1" y="0.642858" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Inimigo" sid="496620183524510">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="512818499611905">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="578176506066083">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="284792230957069" speed="5">
+                    <frame duration="1" hotspotX="0.46" hotspotY="0.964286" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\slimeWalk1.png">
+                        <collision-poly>
+                            <point x="0.14" y="0.165179" />
+                            <point x="0.42" y="0" />
+                            <point x="0.68" y="0.116071" />
+                            <point x="0.8025" y="0.410714" />
+                            <point x="0.87875" y="0.763393" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.005" y="1" />
+                            <point x="0.01" y="0.508929" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Porta" sid="492827242619470">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="910287097044505">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Fechada" pingpong="0" repeatcount="1" repeatto="0" sid="182571714195185" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.981982" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\door_closedTop.png">
+                        <collision-poly>
+                            <point x="0.657143" y="0.027027" />
+                            <point x="0.657143" y="0.045045" />
+                            <point x="0.928571" y="0.0990991" />
+                            <point x="1" y="0.495495" />
+                            <point x="1" y="1" />
+                            <point x="0.657143" y="1" />
+                            <point x="0.657143" y="0.468468" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Aberta" pingpong="0" repeatcount="1" repeatto="0" sid="913826364771583" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.963636" original-source="Z:\Modulo 2\==ASSETS==\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\door_openTop.png">
+                        <collision-poly>
+                            <point x="0.642857" y="0.0272727" />
+                            <point x="0.642857" y="0.0363636" />
+                            <point x="0.885714" y="0.0727273" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.642857" y="1" />
+                            <point x="0.642857" y="0.6" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+        <global-instance type="AudioMoedas" uid="13">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
