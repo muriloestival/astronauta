@@ -221,6 +221,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="831492952283552" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="904854030407431" type="System">
                     <param id="0" name="Layout">Layout 2</param>
                 </action>
@@ -270,6 +273,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="391485065016082" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="594316663643579" type="System">
                     <param id="0" name="Layout">Layout 3</param>
                 </action>
@@ -347,6 +353,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="324411545797677" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="796384633095488" type="System">
                     <param id="0" name="Layout">Layout 4</param>
                 </action>
@@ -394,7 +403,7 @@
             </conditions>
             <actions>
                 <action id="-16" name="Wait" sid="579383494448638" type="System">
-                    <param id="0" name="Seconds">1.0</param>
+                    <param id="0" name="Seconds">0.5</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="841874059764313" type="System">
                     <param id="0" name="Layout">Layout 4</param>
@@ -413,6 +422,21 @@
                 <action id="4" name="Set animation" sid="477881902014697" type="Porta3">
                     <param id="0" name="Animation">&quot;aberta&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="669961779613296">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="167896666843285" type="Player" />
+                <condition id="-7" name="Compare instance variable" sid="810041421002864" type="Player">
+                    <param id="0" name="Instance variable">checkPoint2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="196232301168298" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
                 </action>
             </actions>
         </event-block>

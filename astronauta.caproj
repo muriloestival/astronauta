@@ -914,6 +914,11 @@
         </object-type>
         <object-type name="Porta2" sid="159420239675133">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="491228599738121">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Fechada" pingpong="0" repeatcount="1" repeatto="0" sid="845820682301783" speed="5">
                     <frame duration="1" hotspotX="0.485714" hotspotY="0.954955" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\door_closedTop.png">
