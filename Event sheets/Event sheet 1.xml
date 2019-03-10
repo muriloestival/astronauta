@@ -258,5 +258,17 @@
                 <action id="-9" name="Destroy" sid="837913846965978" type="Player" />
             </actions>
         </event-block>
+        <event-block sid="133533237978197">
+            <conditions>
+                <condition id="2" name="Key is down" sid="693263312594011" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="949535966638061" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

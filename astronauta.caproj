@@ -483,6 +483,29 @@
             <texture original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\tiles_spritesheet.png" />
             <tiles />
         </object-type>
+        <object-type name="Ponte2" sid="782753313431833">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="370291850478704">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="820593808680356">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="339900025638728" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.842857" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\bridgeLogs.png">
+                        <collision-poly>
+                            <point x="0" y="0.646429" />
+                            <point x="1" y="0.64643" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -491,7 +514,6 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
