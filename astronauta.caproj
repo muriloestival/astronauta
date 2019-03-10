@@ -801,6 +801,22 @@
             </behaviors>
             <texture original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 2\Tiles.png" />
             <tiles>
+                <tile id="6">
+                    <collision-poly>
+                        <point x="0" y="0.467857" />
+                        <point x="1" y="0.467857" />
+                        <point x="1" y="0.557142" />
+                        <point x="0" y="0.564285" />
+                    </collision-poly>
+                </tile>
+                <tile id="18">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="0" />
+                        <point x="0" y="0" />
+                    </collision-poly>
+                </tile>
                 <tile id="39">
                     <collision-poly>
                         <point x="0" y="0" />
@@ -865,6 +881,14 @@
                         <point x="0" y="1" />
                     </collision-poly>
                 </tile>
+                <tile id="149">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="1" y="0" />
+                        <point x="0" y="0" />
+                    </collision-poly>
+                </tile>
             </tiles>
         </object-type>
         <object-type name="Final4" sid="197922270069922">
@@ -882,6 +906,37 @@
                             <point x="1" y="0" />
                             <point x="1" y="1" />
                             <point x="0.892" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Porta2" sid="159420239675133">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Fechada" pingpong="0" repeatcount="1" repeatto="0" sid="845820682301783" speed="5">
+                    <frame duration="1" hotspotX="0.528571" hotspotY="0.954955" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\door_closedTop.png">
+                        <collision-poly>
+                            <point x="0.714286" y="0.018018" />
+                            <point x="0.628572" y="0.00900901" />
+                            <point x="0.871429" y="0.0810811" />
+                            <point x="1" y="0.495495" />
+                            <point x="1" y="1" />
+                            <point x="0.671429" y="1" />
+                            <point x="0.671429" y="0.54955" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Aberta" pingpong="0" repeatcount="1" repeatto="0" sid="503877007235375" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\door_openTop.png">
+                        <collision-poly>
+                            <point x="0.685715" y="0" />
+                            <point x="0.642857" y="0" />
+                            <point x="0.885714" y="0.0727273" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.714286" y="1" />
+                            <point x="0.7" y="0.536364" />
                         </collision-poly>
                     </frame>
                 </animation>

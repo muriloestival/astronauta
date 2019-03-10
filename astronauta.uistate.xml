@@ -13,9 +13,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Layout 1</layout>
         <layout order="1">Layout 2</layout>
         <layout order="2">Layout 3</layout>
-        <layout order="4">Layout 4</layout>
+        <layout active="1" order="4">Layout 4</layout>
         <event-sheet order="3">Event sheet 1</event-sheet>
-        <event-sheet active="1" order="5">Event sheet 2</event-sheet>
+        <event-sheet order="5">Event sheet 2</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -49,5 +49,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/FinalNv3/" />
         <folder expanded="1" path="animation-folder/InimigoVoador/" />
         <folder expanded="1" path="animation-folder/Final4/" />
+        <folder expanded="1" path="animation-folder/Porta2/" />
     </folders-expanded>
 </c2uistate>

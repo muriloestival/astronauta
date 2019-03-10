@@ -436,5 +436,21 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="103676288264260">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="909844807461223" type="Player">
+                    <param id="0" name="Object">Porta2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="818339739791195" type="Porta2">
+                    <param id="0" name="Animation">&quot;Aberta&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="941021816959668" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
