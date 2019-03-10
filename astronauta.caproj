@@ -128,6 +128,7 @@
                 <instance-variable name="PoderPulo" sid="728630045979873" type="boolean" />
                 <instance-variable name="WalkNormal" sid="119355650701322" type="number" />
                 <instance-variable name="checkPoint2" sid="951613316311663" type="number" />
+                <instance-variable name="chavesColetadas" sid="244445985670967" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="162261369153551">
@@ -915,7 +916,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Fechada" pingpong="0" repeatcount="1" repeatto="0" sid="845820682301783" speed="5">
-                    <frame duration="1" hotspotX="0.528571" hotspotY="0.954955" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\door_closedTop.png">
+                    <frame duration="1" hotspotX="0.485714" hotspotY="0.954955" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\door_closedTop.png">
                         <collision-poly>
                             <point x="0.714286" y="0.018018" />
                             <point x="0.628572" y="0.00900901" />
@@ -928,7 +929,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Aberta" pingpong="0" repeatcount="1" repeatto="0" sid="503877007235375" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\door_openTop.png">
+                    <frame duration="1" hotspotX="0.485714" hotspotY="0.972727" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\door_openTop.png">
                         <collision-poly>
                             <point x="0.685715" y="0" />
                             <point x="0.642857" y="0" />
@@ -937,6 +938,69 @@
                             <point x="1" y="1" />
                             <point x="0.714286" y="1" />
                             <point x="0.7" y="0.536364" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chaveJogoAstronauta" sid="797582128178072">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="244808099413217">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341789436863276" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\muril\OneDrive\Área de Trabalho\chaveJogoAstronauta.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.35" />
+                            <point x="0.233571" y="0.225" />
+                            <point x="0.297143" y="0.276667" />
+                            <point x="0.350715" y="0.451667" />
+                            <point x="0.876428" y="0.451667" />
+                            <point x="0.884285" y="0.503333" />
+                            <point x="0.836428" y="0.74" />
+                            <point x="0.347142" y="0.536667" />
+                            <point x="0.294286" y="0.735" />
+                            <point x="0.162857" y="0.71" />
+                            <point x="0.131429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Porta3" sid="455903487342686">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="237074150091856">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="fechada" pingpong="0" repeatcount="1" repeatto="0" sid="918099073219367" speed="5">
+                    <frame duration="1" hotspotX="0.485714" hotspotY="0.972973" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\door_closedTop.png">
+                        <collision-poly>
+                            <point x="0.128571" y="0.0810811" />
+                            <point x="0.5" y="0.00900901" />
+                            <point x="0.871429" y="0.0810811" />
+                            <point x="1" y="0.495495" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.495495" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="aberta" pingpong="0" repeatcount="1" repeatto="0" sid="302790836541015" speed="5">
+                    <frame duration="1" hotspotX="0.471429" hotspotY="0.981818" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\door_openTop.png">
+                        <collision-poly>
+                            <point x="0.664286" y="0.0227273" />
+                            <point x="0.7" y="0.0363636" />
+                            <point x="0.885714" y="0.0727273" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.657143" y="1" />
+                            <point x="0.657143" y="0.545455" />
                         </collision-poly>
                     </frame>
                 </animation>

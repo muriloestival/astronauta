@@ -215,22 +215,14 @@
                     <param id="0" name="Object">Porta</param>
                 </condition>
                 <condition id="-7" name="Compare instance variable" sid="164436642258841" type="Player">
-                    <param id="0" name="Instance variable">moedasColetadas</param>
+                    <param id="0" name="Instance variable">chavesColetadas</param>
                     <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">5</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="177607478221084" type="Porta">
-                    <param id="0" name="Animation">&quot;Aberta&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
                 <action id="-2" name="Go to layout" sid="904854030407431" type="System">
                     <param id="0" name="Layout">Layout 2</param>
-                </action>
-                <action id="-10" name="Set value" sid="294788842312114" type="Player">
-                    <param id="0" name="Instance variable">moedasColetadas</param>
-                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -272,18 +264,14 @@
                     <param id="0" name="Object">Final</param>
                 </condition>
                 <condition id="-7" name="Compare instance variable" sid="890534215401518" type="Player">
-                    <param id="0" name="Instance variable">moedasColetadas</param>
+                    <param id="0" name="Instance variable">chavesColetadas</param>
                     <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">5</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="594316663643579" type="System">
                     <param id="0" name="Layout">Layout 3</param>
-                </action>
-                <action id="-10" name="Set value" sid="978975028303469" type="Player">
-                    <param id="0" name="Instance variable">moedasColetadas</param>
-                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -361,6 +349,70 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="796384633095488" type="System">
                     <param id="0" name="Layout">Layout 4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="377946084156365">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="998833212190840" type="Player">
+                    <param id="0" name="Instance variable">chavesColetadas</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="267380389955602" type="Porta">
+                    <param id="0" name="Animation">&quot;Aberta&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="156987595942380">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="702392689586242" type="Player">
+                    <param id="0" name="Object">chaveJogoAstronauta</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Add to" sid="357891225699489" type="Player">
+                    <param id="0" name="Instance variable">chavesColetadas</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="544678761970135" type="chaveJogoAstronauta" />
+            </actions>
+        </event-block>
+        <event-block sid="560027823683874">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="361046435124619" type="Player">
+                    <param id="0" name="Object">Porta3</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="528424424905722" type="Player">
+                    <param id="0" name="Instance variable">chavesColetadas</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="579383494448638" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="841874059764313" type="System">
+                    <param id="0" name="Layout">Layout 4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="954743780817433">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="614109735477435" type="Player">
+                    <param id="0" name="Instance variable">chavesColetadas</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="477881902014697" type="Porta3">
+                    <param id="0" name="Animation">&quot;aberta&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
