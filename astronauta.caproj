@@ -10,9 +10,11 @@
     <unique-id>2g2gih5fm772u</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
@@ -1011,6 +1013,12 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Versão" sid="284804095452777">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="AJAX" sid="992667951069703">
+            <plugin id="AJAX" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1039,6 +1047,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="AJAX" uid="104" />
     </global-instances>
     <sounds-folder />
     <music-folder />

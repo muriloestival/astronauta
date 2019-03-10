@@ -440,5 +440,16 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="813451069745178">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="662244297257629" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Request URL" sid="580983007687440" type="AJAX">
+                    <param id="0" name="Tag">Versão.Text</param>
+                    <param id="1" name="URL">&quot;https://astronauta.herokuapp.com/version&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
