@@ -127,6 +127,7 @@
                 <instance-variable name="moedasColetadas" sid="748431828707850" type="number" />
                 <instance-variable name="PoderPulo" sid="728630045979873" type="boolean" />
                 <instance-variable name="WalkNormal" sid="119355650701322" type="number" />
+                <instance-variable name="checkPoint2" sid="951613316311663" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="162261369153551">
@@ -348,7 +349,7 @@
         <object-type name="AudioMoedas" sid="596596617341714">
             <plugin id="Audio" />
         </object-type>
-        <object-type name="MoedaGravidade" sid="212900724725411">
+        <object-type name="MoedaCheckPoint2" sid="212900724725411">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527735804552058" speed="5">
@@ -501,6 +502,73 @@
                             <point x="1" y="0.64643" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BixoLava" sid="756360708230048">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="846099770195173">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="476616510901581">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581168820256630" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\pokerMad.png">
+                        <collision-poly>
+                            <point x="0" y="0.0787671" />
+                            <point x="0.260417" y="0.0273973" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8125" y="0.0410959" />
+                            <point x="1" y="0.0958904" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Lava" sid="594455793331380">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="996879926459058">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="452600925727647" speed="5">
+                    <frame duration="1" hotspotX="0.485714" hotspotY="0.971429" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\liquidLavaTop_mid.png">
+                        <collision-poly>
+                            <point x="0.267857" y="0.485714" />
+                            <point x="0.5" y="0.414286" />
+                            <point x="0.628571" y="0.371429" />
+                            <point x="0.842857" y="0.371429" />
+                            <point x="1" y="0.421428" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.432143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Final" sid="734969855612410">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847441238166950" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.884001" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.888" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>

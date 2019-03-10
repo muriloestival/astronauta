@@ -164,25 +164,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="955268739455637">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="992854218561689" type="Player">
-                    <param id="0" name="Object">MoedaGravidade</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="5" name="Set gravity" sid="922618948952416" type="Player">
-                    <param id="0" name="Gravity">550</param>
-                </action>
-                <action id="-9" name="Destroy" sid="316643876709973" type="MoedaGravidade" />
-                <action id="-16" name="Wait" sid="479725313999791" type="System">
-                    <param id="0" name="Seconds">3.5</param>
-                </action>
-                <action behavior="Platform" id="5" name="Set gravity" sid="166363207917971" type="Player">
-                    <param id="0" name="Gravity">1500</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="371492551468386">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="537898922837617" type="Player">
@@ -255,7 +236,17 @@
                     <param id="0" name="Animation">&quot;Aberta&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
-                <action id="-9" name="Destroy" sid="837913846965978" type="Player" />
+                <action id="-2" name="Go to layout" sid="904854030407431" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+                <action id="-10" name="Set value" sid="294788842312114" type="Player">
+                    <param id="0" name="Instance variable">moedasColetadas</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="163320981723658" type="Player">
+                    <param id="0" name="Instance variable">checkPoint2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="133533237978197">
@@ -267,6 +258,73 @@
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" sid="949535966638061" type="Player">
                     <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="159848352714352">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="743086247041434" type="Player">
+                    <param id="0" name="Object">BixoLava</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="336022882132310" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="497928842651329">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="615572093185044" type="Player">
+                    <param id="0" name="Object">Lava</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="683490980201829" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="772131252800171">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="219355257802996" type="Player">
+                    <param id="0" name="Object">Final</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="890534215401518" type="Player">
+                    <param id="0" name="Instance variable">moedasColetadas</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="160823138842496" type="Player" />
+                <action id="-10" name="Set value" sid="935126307948698" type="Player">
+                    <param id="0" name="Instance variable">checkPoint2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="309996040235225">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="578252356808733" type="Player">
+                    <param id="0" name="Object">MoedaCheckPoint2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="214221040601636" type="Player">
+                    <param id="0" name="Instance variable">checkPoint2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="724525174130458">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="488034958001266" type="Player" />
+                <condition id="-7" name="Compare instance variable" sid="935549014570161" type="Player">
+                    <param id="0" name="Instance variable">checkPoint2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="306742191058839" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
                 </action>
             </actions>
         </event-block>
