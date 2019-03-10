@@ -351,6 +351,11 @@
         </object-type>
         <object-type name="MoedaCheckPoint2" sid="212900724725411">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="510248240973344">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527735804552058" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\MuEstival\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\coinGold.png">
