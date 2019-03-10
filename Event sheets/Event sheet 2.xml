@@ -424,5 +424,17 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="371253922289401">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="382033867449263" type="Player">
+                    <param id="0" name="Object">Final4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="446313144655954" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
