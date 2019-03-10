@@ -514,7 +514,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3852</x>
+                        <x>3875</x>
                         <y>184</y>
                         <z>0</z>
                         <width>51</width>
@@ -543,8 +543,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3887</x>
-                        <y>129</y>
+                        <x>3873</x>
+                        <y>86</y>
                         <z>0</z>
                         <width>250</width>
                         <height>250</height>
@@ -747,7 +747,7 @@
                                 <active-on-start>Yes</active-on-start>
                                 <movement>Vertical</movement>
                                 <wave>Sine</wave>
-                                <period>1</period>
+                                <period>2</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>

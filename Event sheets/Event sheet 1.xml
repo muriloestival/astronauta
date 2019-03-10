@@ -360,7 +360,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="796384633095488" type="System">
-                    <param id="0" name="Layout">Layout 3</param>
+                    <param id="0" name="Layout">Layout 4</param>
                 </action>
             </actions>
         </event-block>
