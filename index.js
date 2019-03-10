@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/version', function(request, response) {
-  response.send('Version: 3.9.5')
+  response.send('Version: 4.4')
 })
 
 app.listen(app.get('port'), function() {
