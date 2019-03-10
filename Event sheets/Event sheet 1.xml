@@ -446,7 +446,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Request URL" sid="580983007687440" type="AJAX">
-                    <param id="0" name="Tag">Versão.Text</param>
+                    <param id="0" name="Tag">&quot;serverVersion&quot;</param>
                     <param id="1" name="URL">&quot;https://astronauta.herokuapp.com/version&quot;</param>
                 </action>
             </actions>

@@ -926,7 +926,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Versão" uid="103">
+                <instance type="Versao" uid="103">
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -938,6 +938,9 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
+                    <instance-variables>
+                        <serverVersion></serverVersion>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

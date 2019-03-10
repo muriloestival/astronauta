@@ -1013,8 +1013,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Versão" sid="284804095452777">
+        <object-type name="Versao" sid="284804095452777">
             <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="serverVersion" sid="385685929715818" type="string" />
+            </instance-variables>
         </object-type>
         <object-type name="AJAX" sid="992667951069703">
             <plugin id="AJAX" />
