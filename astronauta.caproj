@@ -25,7 +25,7 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1000</width>
+        <width>1200</width>
         <height>750</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
@@ -55,7 +55,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Solida" sid="430234256920311">
+        <object-type name="Solida1" sid="430234256920311">
             <plugin id="Tilemap" />
             <behaviors>
                 <behavior-type name="Solid" sid="368875345277560">
@@ -473,13 +473,25 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Solida2" sid="891972672616148">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="382232611933797">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\tiles_spritesheet.png" />
+            <tiles />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />

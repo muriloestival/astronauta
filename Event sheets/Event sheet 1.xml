@@ -246,7 +246,7 @@
                 </condition>
                 <condition id="-7" name="Compare instance variable" sid="164436642258841" type="Player">
                     <param id="0" name="Instance variable">moedasColetadas</param>
-                    <param id="1" name="Comparison">0</param>
+                    <param id="1" name="Comparison">5</param>
                     <param id="2" name="Value">5</param>
                 </condition>
             </conditions>

@@ -99,7 +99,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Solida" uid="1">
+                <instance type="Solida1" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <tile-width>70</tile-width>
@@ -147,7 +147,7 @@
                     </properties>
                     <instance-variables>
                         <movendo>false</movendo>
-                        <moedasTotais>6</moedasTotais>
+                        <moedasTotais>7</moedasTotais>
                         <moedasColetadas>0</moedasColetadas>
                         <PoderPulo>false</PoderPulo>
                         <WalkNormal>1</WalkNormal>
@@ -389,8 +389,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2510</x>
-                        <y>1399</y>
+                        <x>2160.729492188</x>
+                        <y>1235.675048828</y>
                         <z>0</z>
                         <width>121</width>
                         <height>166</height>
