@@ -164,17 +164,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="371492551468386">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="537898922837617" type="Player">
-                    <param id="0" name="Object">MoedaInimiga</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="442051335887901" type="Player" />
-                <action id="-9" name="Destroy" sid="727711117364598" type="MoedaInimiga" />
-            </actions>
-        </event-block>
         <event-block sid="971217451156857">
             <conditions>
                 <condition id="-8" name="Is boolean instance variable set" sid="338323580775879" type="Player">

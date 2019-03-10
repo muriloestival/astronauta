@@ -34,7 +34,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Moeda/" />
         <folder expanded="1" path="animation-folder/MoedaPulo/" />
         <folder expanded="1" path="animation-folder/MoedaCheckPoint2/" />
-        <folder expanded="1" path="animation-folder/MoedaInimiga/" />
         <folder expanded="1" path="animation-folder/Ponte/" />
         <folder expanded="1" path="animation-folder/Inimigo/" />
         <folder expanded="1" path="animation-folder/Porta/" />
