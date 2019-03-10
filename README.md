@@ -1,6 +1,6 @@
 # O Astronauta
 
-Encontre sua nava e fuja desse planeta horripilante!
+Encontre sua nave e fuja desse planeta horripilante!
 
 ## Running Locally
 
