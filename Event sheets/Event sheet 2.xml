@@ -489,5 +489,44 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="146238976612193">
+            <conditions>
+                <condition id="3" name="Is button down" sid="977881985235581" type="Controle">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="168940726945509" type="Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="484022448045523">
+            <conditions>
+                <condition id="3" name="Is button down" sid="963871774465834" type="Controle">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="156310355621517" type="Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="107897205835776">
+            <conditions>
+                <condition id="3" name="Is button down" sid="255792319712418" type="Controle">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="543504111976093" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

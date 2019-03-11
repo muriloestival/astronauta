@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -1022,6 +1023,9 @@
         <object-type name="AJAX" sid="992667951069703">
             <plugin id="AJAX" />
         </object-type>
+        <object-type name="Controle" sid="418394600631715">
+            <plugin id="gamepad" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1051,6 +1055,11 @@
             </properties>
         </global-instance>
         <global-instance type="AJAX" uid="104" />
+        <global-instance type="Controle" uid="108">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />

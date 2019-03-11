@@ -451,5 +451,50 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="392731825068652">
+            <conditions>
+                <condition id="3" name="Is button down" sid="138205712591624" type="Controle">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="487574921836693" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="243002377672992">
+            <conditions>
+                <condition id="3" name="Is button down" sid="178857106289966" type="Controle">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="889584404083072" type="Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="549981800264161" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="932217168798820">
+            <conditions>
+                <condition id="3" name="Is button down" sid="551538266875411" type="Controle">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="753443357011123" type="Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="228348152271943" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
