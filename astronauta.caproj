@@ -1026,6 +1026,9 @@
         <object-type name="Controle" sid="418394600631715">
             <plugin id="gamepad" />
         </object-type>
+        <object-type name="contadorMoedas" sid="130845117076294">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

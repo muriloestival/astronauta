@@ -528,5 +528,28 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="649113517252170">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="902670882957370" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Request URL" sid="275282316352003" type="AJAX">
+                    <param id="0" name="Tag">&quot;serverVersion&quot;</param>
+                    <param id="1" name="URL">&quot;https://astronauta.herokuapp.com/astronauta/version&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="205467857221987">
+            <conditions>
+                <condition id="0" name="On completed" sid="637913209861633" type="AJAX">
+                    <param id="0" name="Tag">&quot;serverVersion&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="203868418069138" type="Versao">
+                    <param id="0" name="Text">&quot;Early Acess Version: &quot; &amp; AJAX.LastData &amp; newline   &amp; &quot;@muriloestival&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
