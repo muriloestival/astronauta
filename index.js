@@ -12,7 +12,7 @@ app.use(function(req, res, next) {
 
 app.get('/version', function(request, response) {
   console.log("GET /version")
-  response.send('4.4')
+  response.send('0.4.6')
 })
 
 app.listen(app.get('port'), function() {
