@@ -1,13 +1,16 @@
 {
   "name": "astronauta",
   "version": "0.2.0",
-  "description": "Encontre sua nava e fuja desse planeta horripilante",
+  "description": "Encontre sua nave e fuja desse planeta horripilante",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "body-parser": "^1.18.3",
+    "express": "^4.13.3",
+    "json": "^9.0.6",
+    "multer": "^1.4.1"
   },
   "engines": {
     "node": "4.7.0"
