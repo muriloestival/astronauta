@@ -1035,6 +1035,11 @@
         </object-type>
         <object-type name="rightTouch" sid="357186656413984">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="642160116720624">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636457430958651" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -1043,6 +1048,11 @@
         </object-type>
         <object-type name="leftTouch" sid="446351482816074">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="719476718233397">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="210070362052823" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
