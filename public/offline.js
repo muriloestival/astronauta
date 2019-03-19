@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1552875855,
+	"version": 1552955716,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -24,6 +24,7 @@
 		"images/inimigovoador-sheet0.png",
 		"images/final4-sheet0.png",
 		"images/chavejogoastronauta-sheet0.png",
+		"images/righttouch-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",

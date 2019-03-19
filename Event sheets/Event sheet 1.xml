@@ -511,5 +511,44 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="584588536829810">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="434636264061287" type="Touch">
+                    <param id="0" name="Object">rightTouch</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="216129738640778" type="Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="469878958146996">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="604633982539616" type="Touch">
+                    <param id="0" name="Object">leftTouch</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="306536809792417" type="Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="742683486452570">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="483323220478608" type="Touch">
+                    <param id="0" name="Object">rightTouch</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="539442891771451" type="Touch">
+                    <param id="0" name="Object">leftTouch</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="344226323189912" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
