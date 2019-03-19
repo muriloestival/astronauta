@@ -518,6 +518,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="280392834977959" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
                 <action behavior="Platform" id="7" name="Simulate control" sid="216129738640778" type="Player">
                     <param id="0" name="Control">1</param>
                 </action>
@@ -530,6 +533,9 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="425174204532765" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
                 <action behavior="Platform" id="7" name="Simulate control" sid="306536809792417" type="Player">
                     <param id="0" name="Control">0</param>
                 </action>
