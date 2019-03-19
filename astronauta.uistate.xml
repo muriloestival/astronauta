@@ -54,5 +54,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Porta3/" />
         <folder expanded="1" path="animation-folder/rightTouch/" />
         <folder expanded="1" path="animation-folder/leftTouch/" />
+        <folder expanded="1" path="animation-folder/jump/" />
+        <folder expanded="1" path="animation-folder/fotoMoeda/" />
     </folders-expanded>
 </c2uistate>

@@ -1049,6 +1049,33 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="jump" sid="360921717266697">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="884808344456399" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fotoMoeda" sid="760770591782779">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280511627562338" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\muril\OneDrive\Área de Trabalho\Jogos\Assets\Aula 3\Contruct - Aula 3 - Assets\Sprites cenário\coinGold.png">
+                        <collision-poly>
+                            <point x="0.328571" y="0.328571" />
+                            <point x="0.5" y="0.271429" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.757143" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

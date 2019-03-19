@@ -977,7 +977,7 @@
                 </instance>
                 <instance type="contadorMoedas" uid="109">
                     <properties>
-                        <text>Text</text>
+                        <text>X0</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-26.4,400,0</font>
                         <color>255,255,0</color>
@@ -990,8 +990,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>8</x>
-                        <y>8</y>
+                        <x>51.423622131</x>
+                        <y>19.13514328</y>
                         <z>0</z>
                         <width>301</width>
                         <height>106</height>
@@ -1034,11 +1034,33 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>308</x>
-                        <y>377</y>
+                        <x>270</x>
+                        <y>376</y>
                         <z>0</z>
-                        <width>612</width>
+                        <width>686</width>
                         <height>750</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="fotoMoeda" uid="120">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>33.948841095</x>
+                        <y>35.093078613</y>
+                        <z>0</z>
+                        <width>59.321311951</width>
+                        <height>57.032829285</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

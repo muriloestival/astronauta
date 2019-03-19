@@ -551,5 +551,17 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="248200453300741">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="409399726481517" type="Touch">
+                    <param id="0" name="Object">jump</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="547174228772195" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
