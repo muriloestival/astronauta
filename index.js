@@ -21,7 +21,7 @@ app.use(function(req, res, next) {
 app.get('/:gameName/version', function(req, res) {
   console.log("GET /" + req.params.gameName + "/version")
 
-  res.send('0.4.9')
+  res.send('0.4.9.1')
 })
 
 app.post('/:gameName/save', function(req, res) {
